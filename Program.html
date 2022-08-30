@@ -1,44 +1,29 @@
 <html>
 <head>
 </head>
-<body>
-    Enter a number:<input type="text" id="t1" /><br />
-    Enter a number:<input type="text" id="t2" /><br />
-    Result:<input type="text" id="t3" /><br />
+    <body>
+        <div id="d1"></div>
+        <div id="="d2></div>
+        <script>
+            var names=["tushar","nilesh","rohan","kishor","ashok"};
+            //built in methods of javascript
+            //push,pop,unshift,shift,slice,splice,sort,reverse
+            names.push("rahul");//add element at the last
+            names.unshift("parth");//add element at the first position
+            names.unshift("rajesh");
+            names.pop();//remove the last element
+            names.shift();//remove r=the frist element
+            //splice->insert an element in beteween in an array,at same time we can replace the element
+            names.splice(1,0,"ganesh","sujeet","vivek");
+            var newlist=names.slice(2,8);//8-1=7
+            names.sort();
+            names.reverse();
+            document.getElementById("d1").innerHTML=names;
+             document.getElementById("d2").innerHTML=newlist;
 
-    <input type="button" value="Addition" onclick="addition()" />
-    <input type="button" value="Substraction" onclick="sub()" />
-    <input type="button" value="Multiplication" onclick="mul()" />
-    <b id="b1"></b>
-    <b id="b2"></b>
-    <script>
-            function addition()
-            {
-            var n1=document.getElementById("t1").value;
-            var n2=document.getElementById("t2").value;
-            var sum=parseInt(n1)+parseInt(n2);
-            document.getElementById("t3").value=sum;
-            document.getElementById("b1").innerHTML="Addition is"+sum;
-            }
-        function sub()
-           {
-            var n1=document.getElementById("t1").value;
-            var n2=document.getElementById("t2").value;
-            var sum=parseInt(n1)+parseInt(n2);
-            document.getElementById("t3").value=sub;
-            document.getElementById("b2").innerHTML="Substraction is"-sub;
-          }
-         function mul()
-            {
-            var n1=document.getElementById("t1").value;
-            var n2=document.getElementById("t2").value;
-            var sum=parseInt(n1)+parseInt(n2);
-            document.getElementById("t3").value=sum;
-            document.getElementById("b1").innerHTML="Addition is"+sum;
-            }
 
-    </script>
 
-</body>
+        </script>
+    </body>
 
 </html>
